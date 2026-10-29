@@ -1,68 +1,62 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis proyectos | Mi portfolio</title>
 </head>
-<body>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="entorno.html">Mi trabajo</a></li>
-            <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
-        </ul>
-    </nav>
-
+<body id="arriba">
+  <a href="#contenido">Saltar al contenido</a>
+  <header>
     <h1>Mis proyectos</h1>
-
-    <section>
-        <h2>Proyecto 1</h2>
-        <figure>
-            <img src="img/proyectos/proyecto-1.png"
-                 alt="Captura del primer proyecto"
-                 width="400"
-                 height="250">
-            <figcaption>Mi primera página web. He aprendido a crear la estructura básica de HTML.</figcaption>
-        </figure>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="entorno.html">Mi trabajo</a></li>
+        <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contenido">
+    <section aria-labelledby="lista-proyectos">
+      <h2 id="lista-proyectos">Proyectos realizados</h2>
+    <article aria-labelledby="proyecto-1">
+      <h3 id="proyecto-1">Proyecto 1</h3>
+      <figure>
+        <img src="img/proyectos/proyecto-1.jpg" alt="Captura del primer proyecto" width="400">
+        <figcaption>Mi primera página web. He aprendido a crear la estructura básica de HTML.</figcaption>
+      </figure>
+    </article>
+    <article aria-labelledby="proyecto-2">
+      <h3 id="proyecto-2">Proyecto 2</h3>
+      <figure>
+        <img src="img/proyectos/proyecto-2.jpg" alt="Captura del segundo proyecto" width="400">
+        <figcaption>Mi página sobre el entorno de trabajo. He aprendido a organizar el contenido con secciones y listas.</figcaption>
+      </figure>
+    </article>
+    <article aria-labelledby="proyecto-3">
+      <h3 id="proyecto-3">Proyecto 3</h3>
+      <figure>
+        <img src="img/proyectos/proyecto-3.jpg" alt="Captura del tercer proyecto" width="400">
+        <figcaption>Mi página Sobre mí. He aprendido a crear enlaces y navegar entre secciones.</figcaption>
+      </figure>
+    </article>
+    <article aria-labelledby="proyecto-4">
+      <h3 id="proyecto-4">Proyecto 4</h3>
+      <figure>
+        <img src="img/proyectos/proyecto-4.jpg" alt="Captura del cuarto proyecto" width="400">
+        <figcaption>Mi portfolio web. He aprendido a organizar varias páginas con un menú común.</figcaption>
+      </figure>
+    </article>
     </section>
-
-    <section>
-        <h2>Proyecto 2</h2>
-        <figure>
-            <img src="img/proyectos/proyecto-2.png"
-                 alt="Captura del segundo proyecto"
-                 width="400"
-                 height="250">
-            <figcaption>Mi página sobre el entorno de trabajo. He aprendido a organizar el contenido con secciones y listas.</figcaption>
-        </figure>
-    </section>
-
-    <section>
-        <h2>Proyecto 3</h2>
-        <figure>
-            <img src="img/proyectos/proyecto-3.png"
-                 alt="Captura del tercer proyecto"
-                 width="400"
-                 height="250">
-            <figcaption>Mi página Sobre mí. He aprendido a crear enlaces y navegar entre secciones.</figcaption>
-        </figure>
-    </section>
-
-    <section>
-        <h2>Proyecto 4</h2>
-        <figure>
-            <img src="img/proyectos/proyecto-4.png"
-                 alt="Captura del cuarto proyecto"
-                 width="400"
-                 height="250">
-            <figcaption>Mi portfolio web. He aprendido a organizar varias páginas con un menú común.</figcaption>
-        </figure>
-    </section>
-
+  </main>
+  <footer>
+    <p>Autoría: Adrián (@perello-adri).</p>
+    <p>Año: 2026.</p>
+    <p><a href="https://github.com/Perello-adri" target="_blank" rel="noopener noreferrer">Mi GitHub</a></p>
+  </footer>
 </body>
 </html>
-```
