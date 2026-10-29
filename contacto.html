@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Mi portfolio</title>
+</head>
+<body id="arriba">
+  <a href="#contenido">Saltar al contenido</a>
+  <header>
+    <h1>Contacto</h1>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="entorno.html">Mi trabajo</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contenido">
+    <section aria-labelledby="formulario-contacto">
+      <h2 id="formulario-contacto">Envíame un mensaje</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <p><label for="nombre">Nombre:</label><br><input type="text" id="nombre" name="nombre" autocomplete="name" required></p>
+          <p><label for="correo">Correo electrónico:</label><br><input type="email" id="correo" name="correo" autocomplete="email" required></p>
+          <p><label for="motivo">Motivo del contacto:</label><br>
+            <select id="motivo" name="motivo" required>
+              <option value="" selected disabled>Selecciona un motivo</option>
+              <option value="consulta">Consulta</option>
+              <option value="proyecto">Propuesta de proyecto</option>
+              <option value="colaboracion">Colaboración</option>
+              <option value="otro">Otro</option>
+            </select>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Más información</legend>
+          <p>¿Cómo me has conocido?</p>
+          <p><input type="radio" id="buscador" name="conocido" value="buscador" required><label for="buscador">Buscador</label></p>
+          <p><input type="radio" id="redes" name="conocido" value="redes"><label for="redes">Redes sociales</label></p>
+          <p><input type="radio" id="recomendacion" name="conocido" value="recomendacion"><label for="recomendacion">Por recomendación</label></p>
+          <p><input type="radio" id="otro-medio" name="conocido" value="otro"><label for="otro-medio">Otro medio</label></p>
+          <p><label for="mensaje">Mensaje (máximo 1000 caracteres):</label><br><textarea id="mensaje" name="mensaje" rows="6" maxlength="1000" required></textarea></p>
+          <p><input type="checkbox" id="privacidad" name="privacidad" required><label for="privacidad">He leído la información sobre privacidad y acepto que mis datos se utilicen para responder a este mensaje.</label></p>
+        </fieldset>
+        <p><button type="submit">Enviar formulario</button> <button type="reset">Borrar</button></p>
+      </form>
+      <p>También puedes escribirme directamente: <a href="mailto:prueba@gmail.com">prueba@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Autoría: Adrián (@perello-adri).</p>
+    <p>Año: 2026.</p>
+    <p><a href="https://github.com/Perello-adri" target="_blank" rel="noopener noreferrer">Mi GitHub</a></p>
+  </footer>
+</body>
+</html>
